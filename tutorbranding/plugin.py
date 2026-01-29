@@ -31,7 +31,7 @@ config = {
         ],
         "BACKGROUND": "#ffffff",
         "BG_PRIMARY": "#ffffff",
-        "BODY": "#FFFFFF",
+        "BODY": "#000000",
         "PRIMARY": "#0000FF",
         "SECONDARY": "#454545",
         "FONT_FAMILY": "",
@@ -105,13 +105,6 @@ hooks.Filters.CONFIG_OVERRIDES.add_items(
     list(config["overrides"].items())
 )
 
-# Initialization tasks
-# To run the script from templates/panorama/tasks/myservice/init, add:
-with open(
-        str(importlib_resources.files("tutorbranding") / "templates" / "tasks" / "lms" / "init"),
-        encoding="utf-8",
-) as task_file:
-    hooks.Filters.CLI_DO_INIT_TASKS.add_item(("lms", task_file.read()))
 
 # Add the "templates" folder as a template root
 hooks.Filters.ENV_TEMPLATE_ROOTS.add_item(
@@ -120,14 +113,11 @@ hooks.Filters.ENV_TEMPLATE_ROOTS.add_item(
 
 hooks.Filters.ENV_TEMPLATE_TARGETS.add_items(
     [
-        ("theme", "build/openedx/themes"),
         ("brand-openedx", "plugins/mfe/build/mfe"),
         ("brand-openedx-learner-dashboard", "plugins/mfe/build/mfe"),
+        ("theme-sources", "plugins/paragon"),
     ],
 )
-
-# Force the rendering of scss files, even though they are included in a "partials" directory
-hooks.Filters.ENV_PATTERNS_INCLUDE.add_item(r"theme/lms/static/sass/partials/lms/theme/")
 
 
 # MFEs
