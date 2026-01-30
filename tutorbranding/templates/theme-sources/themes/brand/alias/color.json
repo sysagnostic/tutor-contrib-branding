@@ -5,7 +5,7 @@
       "base": { "$value": "{color.white}", "$description": "Basic background color." },
       "active": {
         "source": "$component-active-bg",
-        "$value": "{color.primary.500}",
+        "$value": "{color.theme.bg.brand}",
         "$description": "Active background color."
       }
     },
@@ -27,7 +27,7 @@
     },
     "active": {
       "source": "$component-active-color",
-      "$value": "{color.white}",
+      "$value": "{color.primary.700}",
       "$description": "Color for active element."
     },
     "disabled": {

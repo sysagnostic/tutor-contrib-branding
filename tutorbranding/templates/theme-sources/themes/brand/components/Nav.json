@@ -27,7 +27,7 @@
     "nav": {
       "link": {
         "text": {
-          "base": { "source": "$nav-link-color", "$value": "{color.gray.700}" },
+          "base": { "source": "$nav-link-color", "$value": "{color.primary.base}" },
           "disabled": { "source": "$nav-link-disabled-color", "$value": "{color.gray.300}" }
         },
         "border": { "source": "$nav-tabs-link-border-color", "$value": "transparent" }

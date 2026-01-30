@@ -1,5 +1,9 @@
-// Use this file to set SASS variables for @edx/paragon
-// See _variables.scss in https://github.com/edx/paragon/blob/master/scss/core/ for reference
+$static-path: '..' !default;
+
+// Add an image as banner
+{% if BRANDING_HOMEPAGE_BG_IMAGE != "" %}
+$homepage-bg-image: url('#{$static-path}/images/{{ BRANDING_HOMEPAGE_BG_IMAGE }}');
+{% endif %}
 
 $primary : {{ BRANDING_PRIMARY }};
 $secondary: {{ BRANDING_SECONDARY }};
@@ -14,9 +18,6 @@ $dark: {{ BRANDING_DARK }};
 $accent-a: {{ BRANDING_ACCENT_A }};
 $accent-b: {{ BRANDING_ACCENT_B }};
 
-
-
-
 {% if BRANDING_FONT_FAMILY != "" %}
 $font-family-sans-serif: {{ BRANDING_FONT_FAMILY }} !default;
 $font-family-title: {{ BRANDING_FONT_FAMILY }};
@@ -28,3 +29,7 @@ $serif: {{ BRANDING_FONT_FAMILY }} !default;
 $f-serif: {{ BRANDING_FONT_FAMILY }} !default;
 $f-monospace: {{ BRANDING_FONT_FAMILY }} !default;
 {% endif %}
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
+

@@ -366,7 +366,7 @@
         "actions": {
           "default": "{color.action.default.secondary.base}"
         },
-        "$value": "{color.gray.700}",
+        "$value": "{{ BRANDING_SECONDARY }}",
         "$description": "Basic secondary color."
       }
     },
@@ -642,7 +642,7 @@
         "actions": {
           "default": "{color.action.default.success.base}"
         },
-        "$value": "{color.green}",
+        "$value": "{{ BRANDING_SUCCESS }}",
         "$description": "Basic success color."
       }
     },
@@ -780,7 +780,7 @@
         "actions": {
           "default": "{color.action.default.info.base}"
         },
-        "$value": "{color.teal}",
+        "$value": "{{ BRANDING_INFO }}",
         "$description": "Basic info color."
       }
     },
@@ -918,7 +918,7 @@
         "actions": {
           "default": "{color.action.default.warning.base}"
         },
-        "$value": "{color.yellow}",
+        "$value": "{{ BRANDING_WARNING }}",
         "$description": "Basic warning color."
       }
     },
@@ -1056,7 +1056,7 @@
         "actions": {
           "default": "{color.action.default.danger.base}"
         },
-        "$value": "{color.red}",
+        "$value": "{{ BRANDING_DANGER }}",
         "$description": "Basic danger color."
       }
     },
@@ -1194,7 +1194,7 @@
         "actions": {
           "default": "{color.action.default.light.base}"
         },
-        "$value": "#E1DDDB",
+        "$value": "{{ BRANDING_LIGHT }}",
         "$description": "Basic light color."
       }
     },
@@ -1332,7 +1332,7 @@
         "actions": {
           "default": "{color.action.default.dark.base}"
         },
-        "$value": "#273F2F",
+        "$value": "{{ BRANDING_DARK }}",
         "$description": "Basic dark color."
       }
     },
