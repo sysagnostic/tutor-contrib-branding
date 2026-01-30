@@ -58,6 +58,7 @@ config = {
         "MFE_LOGO_URL": '',
         "MFE_LOGO_WHITE_URL": '',
         "MFE_LOGO_TRADEMARK_URL": '',
+        "MFE_FAVICON_URL": '',
 
         # Repos
         "MFE_PLATFORM_REPO": None,

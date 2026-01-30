@@ -144,6 +144,7 @@ However you can now customize the MFE logos by using these variables:
   in the footer, such as a (tm) or (r) symbol.
 - BRANDING_MFE_LOGO_WHITE_URL: White logo over transparent background intended for
   the login page and other sites where it printed over images or dark background.
+- BRANDING_MFE_FAVICON_URL: Website favicon used by the browser.
 
 The value of these settings must be a public accessible URL containing the image.
 
